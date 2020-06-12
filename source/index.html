@@ -6,19 +6,32 @@
   <title>HTML Academy: Cat Energy</title>
 </head>
 <body>
-  <header class="page-header">
-    <a href="#" class="page-header__logo">
-      <img src="http://placehold.it/150x100" alt="cat" class="page-header__logo-image">
-    </a>
-    <p class="page-header__title"><span class="page-header__bold">cat</span>energy</p>
-    <nav class="main-nav">
-      <button class="main-nav__toggle-button" type="button">Меню</button>
-      <ul class="main-nav__list visually-hidden">
-        <li class="main-nav__list-item">главная</li>
-        <li class="main-nav__list-item">каталог продукции</li>
-        <li class="main-nav__list-item">подбор программы</li>
-      </ul>
-    </nav>
+  <header class="header">
+    <div class="header__wrapper">
+      <a href="#" class="logo header__logo">
+        <picture class="logo__container">
+          <source media="(min-width: )" srcset="">
+          <source media="(min-width: )" srcset="">
+          <img src="http://placehold.it/150x100" alt="Cat Energy Logo" class="logo__image">
+        </picture>
+      </a>
+      <nav class="navigation header__navigation">
+        <button class="navigation__toggle-button" type="button">
+          <span class="visually-hidden">Меню</span>
+        </button>
+        <ul class="navigation__list">
+          <li class="navigation__list-item">
+            <a href="#" class="navigation__link navigation__link--active">главная</a>
+          </li>
+          <li class="navigation__list-item">
+            <a href="#" class="navigation__link">каталог продукции</a>
+          </li>
+          <li class="navigation__list-item">
+            <a href="#" class="navigation__link">подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main class="page-main">
     <section class="main-offer">
