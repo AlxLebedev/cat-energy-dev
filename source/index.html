@@ -12,7 +12,7 @@
         <picture class="logo__container">
           <source media="(min-width: )" srcset="">
           <source media="(min-width: )" srcset="">
-          <img src="http://placehold.it/150x100" alt="Cat Energy Logo" class="logo__image">
+          <img class="logo__image" src="http://placehold.it/150x100" alt="Cat Energy Logo">
         </picture>
       </a>
       <nav class="navigation header__navigation">
@@ -21,13 +21,13 @@
         </button>
         <ul class="navigation__list">
           <li class="navigation__list-item">
-            <a href="#" class="navigation__link navigation__link--active">Главная</a>
+            <a class="navigation__link navigation__link--active" href="#">Главная</a>
           </li>
           <li class="navigation__list-item">
-            <a href="#" class="navigation__link">Каталог продукции</a>
+            <a class="navigation__link" href="#">Каталог продукции</a>
           </li>
           <li class="navigation__list-item">
-            <a href="#" class="navigation__link">Подбор программы</a>
+            <a class="navigation__link" href="#">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -43,30 +43,30 @@
           <source media="(min-width: )" srcset="">
           <img src="http://placehold.it/150x100" alt="фото товара" class="offer__image">
         </picture>
-        <a href="#" class="offer__link">
-          <button class="button offer__button" type="button">Подобрать программу</button>
-        </a>
+        <button class="button offer__button" type="button">Подобрать программу</button>
       </div>
     </section>
-    <section class="catalogues">
-      <div class="catalogues__wrapper">
-        <h2 class="visually-hidden">Наши каталоги - системы питания для котов</h2>
-        <article class="catalogue catalogues__slimming">
-          <h3 class="catalogue__title">похудение</h3>
-          <p class="catalogue__description">
-            Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
-            Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
-          </p>
-          <a href="#" class="catalogue__link">каталог slim</a>
-        </article>
-        <article class="catalogue catalogues__pro">
-          <h3 class="catalogue__title">похудение</h3>
-          <p class="catalogue__description">
-            Заработать авторитет среди дворовых котов и даже собак?
-            Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
-          </p>
-          <a href="#" class="catalogue__link">каталог slim</a>
-        </article>
+    <section class="catalog">
+      <div class="catalog__wrapper">
+        <h2 class="visually-hidden">Наш каталог товаров - системы питания для котов</h2>
+        <ul class="catalog__list">
+          <li class="catalog__item catalog__item--slimming">
+            <h3 class="catalog__item-title">похудение</h3>
+            <p class="catalog__item-description">
+              Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
+              Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
+            </p>
+            <a href="#" class="catalog__item-link">каталог slim</a>
+          </li>
+          <li class="catalog__item catalog__item--pro">
+            <h3 class="catalogue__item-title">похудение</h3>
+            <p class="catalogue__item-description">
+              Заработать авторитет среди дворовых котов и даже собак?
+              Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
+            </p>
+            <a href="#" class="catalogue__item-link">каталог slim</a>
+          </li>
+        </ul>
       </div>
     </section>
     <section class="conception">
@@ -81,15 +81,15 @@
       </div>
     </section>
     <section class="real-case">
-      <div class="real-case__content">
+      <div class="real-case__text-content">
         <h2 class="real-case__title">Живой пример</h2>
         <p class="real-case__description">
           Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок!
           При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
         <ul class="real-case__indicators">
-          <li class="rel-case__item">5 кг</li>
-          <li class="rel-case__item">60 дней</li>
+          <li class="rel-case__item rel-case__item--weight">5 кг</li>
+          <li class="rel-case__item rel-case__item--timerame">60 дней</li>
         </ul>
         <p class="real-case__expenses">Затраты на питание: 15 000 руб.</p>
       </div>
@@ -100,14 +100,14 @@
               <picture class="slider__image-container">
                 <source media="(min-width: )" srcset="">
                 <source media="(min-width: )" srcset="">
-                <img src="http://placehold.it/150x100" alt="Кот до похудения" class="slider__image">
+                <img class="slider__image" src="http://placehold.it/150x100" alt="Кот до похудения">
               </picture>
             </li>
             <li class="slider__item">
               <picture class="slider__image-container">
                 <source media="(min-width: )" srcset="">
                 <source media="(min-width: )" srcset="">
-                <img src="http://placehold.it/150x100" alt="Кот после похудения" class="slider__image">
+                <img class="slider__image" src="http://placehold.it/150x100" alt="Кот после похудения">
               </picture>
             </li>
           </ul>
@@ -136,44 +136,43 @@
             ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
           </p>
         </div>
-        <iframe class="contacts__map" src="#" frameborder="0">
-          Ваш браузер не поддерживате плавающие фреймы...
-        </iframe>
+        <iframe class="contacts__map" src="#" frameborder="0"></iframe>
       </div>
     </section>
     <div class="footer__wrapper">
       <section class="footer__logo">
         <h2 class="visually-hidden">Логотип Cat Energy</h2>
-        <a href="" class="footer__logo-link">
-          <img src="http://placehold.it/150x100" alt="Cat Energy Logo" class="footer__logo-image">
+        <a class="footer__logo-link" href="">
+          <img class="footer__logo-image" src="http://placehold.it/150x100" alt="Cat Energy Logo">
         </a>
       </section>
       <section class="social footer__social">
         <h2 class="visually-hidden">Социальный сети</h2>
         <ul class="social__list">
           <li class="social__item">
-            <a href="#" class="social__link social__link--vk">
+            <a class="social__link social__link--vk" href="#">
               <span class="visually-hidden">ВКонтакте</span>
-              <img src="#" alt="VK icon" class="social__image">
+              <img class="social__image" src="#" alt="VK icon">
             </a>
           </li>
           <li class="social__item">
-            <a href="#" class="social__link social__link--instagramm">
+            <a class="social__link social__link--instagramm" href="#">
               <span class="visually-hidden">Инстаграмм</span>
-              <img src="#" alt="instagramm icon" class="social__image">
+              <img class="social__image" src="#" alt="instagramm icon">
             </a>
           </li>
           <li class="social__item">
-            <a href="#" class="social__link social__link--facebook">
+            <a class="social__link social__link--facebook" href="#">
               <span class="visually-hidden">Фейсбук</span>
-              <img src="#" alt="facebook icon" class="social__image">
+              <img class="social__image" src="#" alt="facebook icon">
             </a>
           </li>
         </ul>
       </section>
       <section class="copyright footer__copyright">
+        <h2 class="visually-hidden">Copyright</h2>
         <span class="copyright__name">HTML Academy</span>
-        <img src="http://placehold.it/150x100" alt="HTML Academy logo" class="copyright__image">
+        <img class="copyright__image" src="http://placehold.it/150x100" alt="HTML Academy logo">
       </section>
     </div>
   </footer>
