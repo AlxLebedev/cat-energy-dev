@@ -10,7 +10,7 @@
     "gulp": "3.9.x",
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "7.0.x",
-    "stylelint": "9.2.x",
+    "stylelint": "8.4.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
