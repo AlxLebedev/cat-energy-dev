@@ -6,11 +6,11 @@
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "7.2.x",
-    "browser-sync": "^2.26.7",
-    "gulp": "^4.0.2",
+    "browser-sync": "2.23.x",
+    "gulp": "3.9.x",
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "7.0.x",
-    "stylelint": "^13.6.0",
+    "stylelint": "8.4.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
@@ -35,7 +35,7 @@
     "source/sass/**/*.{sass,scss}"
   ],
   "engines": {
-    "node": "8.11"
+    "node": "8.9"
   },
   "dependencies": {
     "gulp-sass": "^4.1.0",
