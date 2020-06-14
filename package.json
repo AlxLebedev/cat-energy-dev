@@ -6,11 +6,11 @@
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "7.2.x",
-    "browser-sync": "2.23.x",
-    "gulp": "3.9.x",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "7.0.x",
-    "stylelint": "8.4.x",
+    "stylelint": "^13.6.0",
     "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
