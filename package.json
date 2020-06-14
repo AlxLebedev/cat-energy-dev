@@ -5,6 +5,11 @@
   "description": "Cat Energy from HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
+    "autoprefixer": "7.2.x",
+    "browser-sync": "2.23.x",
+    "gulp": "3.9.x",
+    "gulp-plumber": "1.2.x",
+    "gulp-postcss": "7.0.x",
     "stylelint": "9.2.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
@@ -13,11 +18,27 @@
     "stylelint": "stylelint .",
     "test": "npm run editorconfig"
   },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
   "editorconfig-cli": [
     "*.json",
-    "source/*.html"
+    "*.js",
+    "source/*.html",
+    "source/js/**/*.js",
+    "source/img/**/*.svg",
+    "source/sass/**/*.{sass,scss}"
   ],
   "engines": {
     "node": "8.11"
+  },
+  "dependencies": {
+    "gulp-sass": "^4.1.0",
+    "natives": "^1.1.6"
+  },
+  "resolutions": {
+    "graceful-fs": "4.2.3"
   }
 }
