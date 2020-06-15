@@ -1,3 +1,57 @@
-.header {
-  background-color: $header-background-color;
+.header__wrapper {
+  padding: 12px 20px 12px 20px;
+}
+
+.logo__container {
+  position: relative;
+}
+
+.logo__container::after {
+  content: "";
+  position: absolute;
+  width: 104px;
+  height: 20px;
+  background-image: url("../img/logo-mobile-header.svg");
+  top: 0;
+  left: 0;
+}
+
+.header__navigation {
+  position: relative;
+}
+
+.navigation__toggle-button {
+  position: absolute;
+  left: 90%;
+  top: -34px;
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/icon-mobile-menu.svg");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  @include button-cursor();
+}
+
+.navigation__list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+  list-style-type: none;
+}
+
+.navigation__list--closed {
+  display: none;
+}
+
+.navigation__list-item {
+  margin-bottom: 10px;
+}
+
+.navigation__link {
+  color: #000000;
+  text-decoration: none;
 }
