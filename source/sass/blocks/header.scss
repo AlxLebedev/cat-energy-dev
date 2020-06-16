@@ -1,42 +1,44 @@
 .header__wrapper {
+  position: relative;
   padding: 12px 20px 12px 20px;
 }
 
-.logo__container {
-  position: relative;
-}
-
-.logo__container::after {
+.header__wrapper::after {
   content: "";
   position: absolute;
-  width: 104px;
-  height: 20px;
+  top: 24px;
+  left: calc(50% - 52px);
+  width: 101px;
+  height: 18px;
   background-image: url("../img/logo-mobile-header.svg");
-  top: 0;
-  left: 0;
-}
-
-.header__navigation {
-  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .navigation__toggle-button {
   position: absolute;
-  left: 90%;
-  top: -34px;
+  top: 24px;
+  left: 85%;
   width: 24px;
-  height: 24px;
-  background-image: url("../img/icon-mobile-menu.svg");
+  height: 18px;
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
   border: none;
-  @include button-cursor();
+  cursor: pointer;
+}
+
+.navigation__toggle-button--menu-open {
+  background-image: url("../img/icon-mobile-menu.svg");
+}
+
+.navigation__toggle-button--menu-close {
+  background-image: url("../img/icon-close.svg");
 }
 
 .navigation__list {
   width: 100%;
-  margin: 0;
+  margin: 20px 0 0 0;
   padding: 0;
   text-align: center;
   text-transform: uppercase;
@@ -44,11 +46,16 @@
 }
 
 .navigation__list--closed {
-  display: none;
+  @include visually-hidden
 }
 
 .navigation__list-item {
-  margin-bottom: 10px;
+  padding: 10px 0 10px 0;
+  border-bottom: 1px solid #000000;
+}
+
+.navigation__list-item:first-child {
+  border-top: 1px solid #000000;
 }
 
 .navigation__link {

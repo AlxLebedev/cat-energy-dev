@@ -1,8 +1,8 @@
 {
   "name": "cat-energy",
-  "version": "1.0.0",
+  "version": "13.0.0",
   "private": true,
-  "description": "Cat Energy from HTML Academy",
+  "description": "Личный проект «Кэт энерджи» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "7.2.x",
